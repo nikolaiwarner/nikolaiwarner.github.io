@@ -5,9 +5,9 @@ title: nikolai warner
 
 <header>
   <div class='header_image'>
-    <img class='background' src='website/images/bg.png' />
-    <img class='nick' src='website/images/nick.png' />
-    <img class='frame' src='website/images/frame.png' />
+    <img class='background' src='http://nikolaiwarner.github.com/nikolaiwarner.com/images/bg.png' />
+    <img class='nick' src='http://nikolaiwarner.github.com/nikolaiwarner.com/images/nick.png' />
+    <img class='frame' src='http://nikolaiwarner.github.com/nikolaiwarner.com/images/frame.png' />
   </div>
 
   <h1>
@@ -21,6 +21,23 @@ title: nikolai warner
      <li><a href="http://dinosaurs.tumblr.com" rel="me">nikolai's animated gif blog</a></li>
      <li><a href="http://phrays.com" rel="me">phrays: a game for word nerds</a></li>
    </ol>
+</section>
+
+<section>
+  <h2>current projects</h2>
+   <ol>
+     <li><a href="http://dinosaurs.tumblr.com" rel="me">nikolai's animated gif blog</a></li>
+     <li><a href="http://phrays.com" rel="me">phrays: a game for word nerds</a></li>
+   </ol>
+</section>
+
+<section>
+  <h2>weblog postings</h2>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
 </section>
 
 <section>
