@@ -1,0 +1,338 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two);
+
+body {
+  background-color: #000;
+  
+  margin: 0 auto;
+  width: 1024px;
+  
+  font-family: 'Lobster Two', cursive;
+  font-size: 50px;
+}
+
+.game {
+  position: relative;
+
+  width: 1024px;
+  height: 768px;
+  overflow: hidden;
+  
+  background-color: #000;
+  
+  outline: 1px solid #555;
+}
+
+
+.titles {
+  position: absolute;
+}
+
+.title {
+  font-size: 100px;
+  text-align: center;
+  -webkit-transform: rotateZ(-10deg);
+  
+  text-shadow: #000 5px 5px 5px;
+  
+  top: 120px;
+  left: 120px;
+  color: #fff;
+}
+
+.nikolaiwarner {
+  font-size: 30px;
+  text-align: center;
+  -webkit-transform: rotateZ(-10deg);
+  
+  top: 420px;
+  left: 200px;
+  color: #ddd;
+}
+
+
+.start {
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
+  
+  font-size: 30px;
+  
+  border: 1px solid #fff;
+  border-radius: 5px;
+  
+  position: absolute;
+  cursor: pointer;
+  
+  top: 550px;
+  left: 420px;
+}
+
+
+.curtains {
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1200px;
+  height: 1200px;
+}
+
+
+.keyboxes {
+  position: absolute;
+  
+  top: 670px;
+  width: 350px;
+  
+  .keybox {
+    position: relative;
+    float: left;
+    
+    margin-left: 15px;
+    
+    width: 50px;
+    height: 50px;
+    
+    padding: 5px;
+  
+    color: rgba(255,100,100,0);
+    
+    border: 1px solid #dd5555;
+    border-radius: 5px;
+  
+    -webkit-transition: background-color 0.3s;
+  }
+  
+  .keybox.hover {
+    background-color: #dd5555;
+  }
+  
+}
+
+.keyboxes.right {
+  left: 20px;
+}
+
+.keyboxes.left {
+  left: 675px;
+}
+
+
+
+
+.scenery, .stillscenery {
+  position: absolute;
+}
+.character {
+  position: absolute;
+}
+
+
+@-webkit-keyframes sax {
+  0%    { left: 0px; }
+  20%   { left: 5px; }
+  40%   { left: 20px; }
+  100%  { left: 0px;}
+}
+.sax {
+  background-image: url(../images/sax.gif);
+  width: 46px;
+  height: 70px;
+
+  -webkit-animation: sax 10s infinite;
+}
+
+
+
+@-webkit-keyframes ground1_1 {
+        0%   { left: 0px; }
+        100% { left: -1200px }
+}
+@-webkit-keyframes ground1_2 {
+        0%   { left: 1200px; }
+        100% { left: 0px }
+}
+.ground1_1 {
+  -webkit-animation: ground1_1 150s infinite linear;
+}
+.ground1_2 {
+  -webkit-animation: ground1_2 150s infinite linear;
+}
+
+.ground1 {
+  background-image: url(../images/ground1.gif);
+  width: 1200px;
+  height: 184px;
+  
+  top: 385px;
+  left: 0px;
+}
+
+
+
+
+@-webkit-keyframes water_1 {
+        0%   { left: 0px; }
+        100% { left: -1200px }
+}
+@-webkit-keyframes water_2 {
+        0%   { left: 1200px; }
+        100% { left: 0px }
+}
+.water_1 {
+  -webkit-animation: water_1 40s infinite linear;
+}
+.water_2 {
+  -webkit-animation: water_2 40s infinite linear;
+}
+.water {
+  background-image: url(../images/water.gif);
+  width: 1200px;
+  height: 350px;
+  
+  top: 540px;
+  left: 0px;
+}
+
+.water2 {
+  background-image: url(../images/water2.png);
+  width: 1200px;
+  height: 500px;
+  
+  top: 540px;
+  left: 0px;
+}
+
+.city {
+  background-image: url(../images/city.gif);
+  width: 1200px;
+  height: 213px;
+  
+  top: 320px;
+  left: 0px;
+}
+
+
+
+
+@-webkit-keyframes trees_1 {
+        0%   { left: 0px; }
+        100% { left: -1200px }
+}
+@-webkit-keyframes trees_2 {
+        0%   { left: 1200px; }
+        100% { left: 0px }
+}
+.trees_1 {
+  -webkit-animation: trees_1 330s infinite linear;
+}
+.trees_2 {
+  -webkit-animation: trees_2 330s infinite linear;
+}
+.trees {
+  background-image: url(../images/trees.gif);
+  width: 1200px;
+  height: 213px;
+  
+  top: 320px;
+  left: 0px;
+}
+
+
+@-webkit-keyframes glow {
+  0%    { -webkit-transform: scale(1); }
+  20%   { -webkit-transform: scale(0.9); }
+  50%   { -webkit-transform: scale(1.1); }
+  75%   { -webkit-transform: scale(1.2); }
+  100%   { -webkit-transform: scale(1); }
+}
+.glow {
+  background-image: url(../images/glow.png);
+  width: 1200px;
+  height: 600px;
+  
+  top: 0px;
+  left: -100px;
+  
+  -webkit-animation: glow 200s infinite;
+}
+
+
+@-webkit-keyframes stars {
+  0%    { -webkit-transform: rotateZ(0deg); }
+  100%   { -webkit-transform: rotateZ(360deg); }
+}
+.stars {
+  background-image: url(../images/stars.gif);
+  width: 1200px;
+  height: 1200px;
+  
+  top: 0px;
+  left: -100px;
+  
+  -webkit-animation: stars 600s infinite linear;
+}
+
+
+
+
+
+.character_container {
+  position: absolute;
+}
+
+
+
+
+@-webkit-keyframes bird {
+  0%    { left: 0px; top: 0px;}
+  20%   { left: 20px; top: 20px}
+  40%   { left: 10px; top: -10px}
+  100%  { left: 0px; top: 0px }
+}
+.bird {
+  background-image: url(../images/bird.gif);
+  width: 53px;
+  height: 32px;
+  
+  top: -100px;
+  left: -100px;
+  
+  -webkit-animation: bird 10s infinite;
+}
+
+
+
+@-webkit-keyframes cat {
+  0%    { left: 0px; }
+  20%   { left: -5px; }
+  40%   { left: 20px; }
+  100%  { left: 0px;}
+}
+.cat {
+  background-image: url(../images/cat.gif);
+  width: 70px;
+  height: 55px;
+  
+  -webkit-animation: cat 10s infinite;
+}
+
+
+
+
+@-webkit-keyframes girl {
+  0%    { left: 0px; }
+  20%   { left: -10px; }
+  40%   { left: 10px; }
+  100%  { left: 0px;}
+}
+.girl {
+  background-image: url(../images/girl.gif);
+  width: 33px;
+  height: 75px;
+  
+  -webkit-animation: girl 10s infinite;
+}
+

@@ -145,3 +145,8 @@ a:hover {
   top: 30px;
   -webkit-animation: dance 4s infinite ease-in-out;
 }
+
+
+.projects img {
+  width: 100%;
+}
