@@ -1,72 +1,19 @@
 ---
 layout: default
 title: "nikolai warner: human experience designer"
+body_class: homepage
 ---
 
 <header>
   <div class='header_image'>
-    <img class='background' src='/images/bg.png' />
-    <img class='nick' src='/images/nick.png' />
+    <div class='background'></div>
+    <div class="nick_container">
+      <img class='nick' src='/images/nick.png' />
+    </div>
     <img class='frame' src='/images/frame.png' />
   </div>
 
   <h1>
-    nikolai warner
+    nikolai warner!
   </h1>
 </header>
-
-
-<section>
-  <h2>new happenings</h2>
-   <ol>
-   </ol>
-</section>
-
-
-<section>
-  <h2>nikolai's current preoccupations</h2>
-  {% include current_preoccupations.md %}
-</section>
-
-
-<section>
-  <h2>a list of nikolai's longform weblog postings</h2>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</section>
-
-
-<section>
-  <h2>now i shall entertain you with a bit of art</h2>
-  <ul>
-    <li><a href="/projects/video">videos by nikolai warner</a></li>
-    <li><a href="/projects/games">games by nikolai warner</a></li>
-  </ul>
-</section>
-
-
-<section>
-  <h2>and, here you find some of my projects you might enjoy</h2>
-  <ul>
-     <li><a href="http://phrays.com" rel="me">phrays: a game for word nerds</a></li>
-     <li><a href="http://dinosaurs.tumblr.com" rel="me">nikolai's animated gif blog</a></li>
-  </ul>
-</section>
-
-
-<section>
-  <h2>lastly, instances of nikolai across the great internet</h2>
-  <ul>
-    <li><a href="https://docs.google.com/document/d/1UqUpIigM-5fWbeFNmBGW9G2cJScyNZ2ORsCoQwS_Zp0/edit" rel="me">resume and artist cv</a></li>
-    <li><a href="http://github.com/nikolaiwarner" rel="me">github</a></li>
-    <li><a href="http://facebook.com/nikolaiwarner" rel="me">facebook</a></li>
-    <li><a href="http://www.flickr.com/photos/nickwarner" rel="me">flickr</a></li>
-    <li><a href="http://www.last.fm/user/nwarner" rel="me">last.fm</a></li>
-    <li><a href="http://lookbook.nu/nikolai" rel="me">lookbook.nu</a></li>
-    <li><a href="http://twitter.com/nickwarner" rel="me">twitter</a></li>
-    <li><a href="http://www.amazon.com/gp/registry/registry.html?id=3A9RVUAXS1YU9" rel="me">wishlist</a></li>
-  </ul>
-</section>

@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Merienda|Bitter);
+
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
     margin:0;
     padding:0;
@@ -39,8 +41,10 @@ header, section, footer, aside, nav, article, figure {
 
 body {
   color: #FCE67A;
-  text-shadow:0 1px 0 #777;
-  font-family: "Helvetica Neue", Verdana, Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 0 #777;
+  font-family: 'Bitter', cursive;
+  font-size: 2em;
+  line-height: 1.3em;
   background-color: #00CCFF;
 
   margin:0;
@@ -50,7 +54,7 @@ body {
 .container {
   clear: both;
   margin: 0 auto;
-  width: 450px;
+  width: 720px;
   text-align: left;
 }
 
@@ -59,6 +63,7 @@ header {
 
 h1 {
   font-size: 2.4em;
+  line-height: 1em;
   margin-top: 30px;
   margin-bottom: 20px;
   color: #CC0000;
@@ -71,7 +76,7 @@ h2 {
 }
 
 section {
-  margin-top: 30px;
+  margin-bottom: 60px;
 }
 
 footer {
@@ -85,24 +90,23 @@ a, a:link, a:visited, a:active, a:link {
 }
 a:hover {
   color: #FCE67A;
+  text-decoration: underline;
 }
 
 
-.header_image {
-  width:inherit;
-  height:450px;
-  overflow: hidden;
 
-  -webkit-transform: rotate(-5deg);
-  -moz-transform: rotate(-5deg);
-  -ms-transform: rotate(-5deg);
+@-webkit-keyframes peek {
+  0% {
+    -webkit-transform: translateY(500px);
+  }
 
-  position: relative;
-}
+  20% {
+    -webkit-transform: translateY(500px);
+  }
 
-
-.header_image img {
-  position: absolute;
+  100% {
+    -webkit-transform: translateY(0px);
+  }
 }
 
 
@@ -136,14 +140,85 @@ a:hover {
 }
 
 
+.header_image {
+  width:inherit;
+  height:450px;
+  overflow: hidden;
+  z-index: -1;
+
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+
+  position: relative;
+
+  background: #ffff88; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffff88 0%, #e1a0ff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffff88), color-stop(100%,#e1a0ff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ffff88 0%,#e1a0ff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ffff88 0%,#e1a0ff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ffff88 0%,#e1a0ff 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #ffff88 0%,#e1a0ff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#e1a0ff',GradientType=0 ); /* IE6-9 */
+}
+
+.header_image img {
+  position: absolute;
+}
 
 .header_image .background {
-  -webkit-animation: flip 4s infinite linear;
+  position: absolute;
+  height: 450px;
+  width: 100%;
+  background-image: url(/images/water.gif);
+  //-webkit-animation: flip 4s infinite linear;
+}
+
+.header_image .frame {
+  height: 450px;
+  width: 100%;
+}
+
+.header_image .nick_container {
+  position: absolute;
+  -webkit-animation: peek 3s ease-in-out;
 }
 
 .header_image .nick {
   top: 30px;
-  -webkit-animation: dance 4s infinite ease-in-out;
+  -webkit-animation: dance 10s infinite ease-in-out;
+}
+
+
+body.homepage nav {
+  display: none;
+}
+
+body.homepage h1 {
+  color: #fff;
+}
+
+
+
+.links {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid yellow;
+}
+
+.links section ul {
+  text-align: center;
+}
+
+
+
+
+.preoccupations h3 {
+  color: #fff;
+  margin-top: 10px;
+}
+.preoccupations small {
+  color: #555;
 }
 
 
