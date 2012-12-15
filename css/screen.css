@@ -55,7 +55,7 @@ body {
   clear: both;
   margin: 0 auto;
   width: 720px;
-  text-align: left;
+  /*text-align: left;*/
 }
 
 header {
