@@ -5,14 +5,12 @@
    <title>{{ page.title }} - nwarner, human experience designer</title>
    <meta name="author" content="nick@nwarner.com" />
 
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
+   <link rel="stylesheet" href="/css/clean.css" type="text/css" media="screen, projection" />
 </head>
 <body class="{{ page.body_class }}">
-  <div class="container">
-    {% include navbar.html %}
-    {{ content }}
-    {% include links.html %}
-  </div>
+  {% include navbar.html %}
+
+  {{ content }}
 
   {% include analytics.html %}
 </body>

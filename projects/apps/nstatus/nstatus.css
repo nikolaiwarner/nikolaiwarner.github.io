@@ -1,0 +1,13 @@
+.nstatus {
+  font-family: sans-serif;
+  font-size: 2em;
+  line-height: 1.4em;
+
+  margin: 40px;
+}
+
+.nstatus .status {
+  border-top: 1px solid #555;
+  padding-top: 20px;
+  margin-top: 20px;
+}

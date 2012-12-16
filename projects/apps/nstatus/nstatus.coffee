@@ -1,11 +1,11 @@
 class NStatus
   constructor: ->
-    @fetch_data('/status.json')
+    @fetch_data('nstatus.json')
 
 
   fetch_data: (data_source) =>
     $.get data_source, (response) =>
-      @nickwarner = response
+      @nickwarner = response.nickwarner
       @update_display()
 
 
@@ -18,4 +18,4 @@ class NStatus
 
 
 $ ->
-  window.status = new NStatus()
+  window.nstatus = new NStatus()

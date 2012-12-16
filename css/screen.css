@@ -145,12 +145,13 @@ a:hover {
   height:450px;
   overflow: hidden;
   z-index: -1;
+  position: relative;
+
+  border: 2px solid #000;
 
   -webkit-transform: rotate(-5deg);
   -moz-transform: rotate(-5deg);
   -ms-transform: rotate(-5deg);
-
-  position: relative;
 
   background: #ffff88; /* Old browsers */
   background: -moz-linear-gradient(top, #ffff88 0%, #e1a0ff 100%); /* FF3.6+ */
@@ -172,11 +173,6 @@ a:hover {
   width: 100%;
   background-image: url(/images/water.gif);
   //-webkit-animation: flip 4s infinite linear;
-}
-
-.header_image .frame {
-  height: 450px;
-  width: 100%;
 }
 
 .header_image .nick_container {
@@ -224,4 +220,9 @@ body.homepage h1 {
 
 .projects img {
   width: 100%;
+}
+
+
+.navbar {
+  border-bottom: 1px solid yellow;
 }
