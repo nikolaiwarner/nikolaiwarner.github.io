@@ -1,7 +1,9 @@
 {
-  nickwarner: {
-
-    dates_of_recent_illness: ["01/01/2012"]
-
-  }
+  "illness": [
+    {
+      "date": "01/01/2012",
+      "description": "Initial date.  Not really an illness, but I dont really recall anything sooner than this."
+    }
+  ]
 }
+

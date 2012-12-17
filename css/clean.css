@@ -1,13 +1,16 @@
 body {
-  margin-top: 30px;
+  padding-top: 30px;
 }
 
-.navbar {
+.navbar_container {
   position: absolute;
   top: 0px;
   left: 0px;
-  padding: 5px;
   width: 100%;
+}
+
+.navbar {
+  padding: 5px;
   height: 20px;
   color: #fff;
   background-color: #000;

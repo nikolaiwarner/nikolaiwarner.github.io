@@ -186,6 +186,22 @@ a:hover {
 }
 
 
+
+.links {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid yellow;
+  font-size: 0.5em;
+  line-height: 1em;
+}
+
+.links section ul {
+  text-align: center;
+}
+
+
+
+
 body.homepage nav {
   display: none;
 }
@@ -194,17 +210,12 @@ body.homepage h1 {
   color: #fff;
 }
 
-
-
-.links {
-  margin-top: 40px;
-  padding-top: 40px;
-  border-top: 1px solid yellow;
+body.homepage .links {
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
-.links section ul {
-  text-align: center;
-}
+
 
 
 

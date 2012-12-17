@@ -1,19 +1,23 @@
 class NStatus
   constructor: ->
+    @nstatus = {}
     @fetch_data('nstatus.json')
 
 
+
   fetch_data: (data_source) =>
-    $.get data_source, (response) =>
-      @nickwarner = response.nickwarner
+    $.getJSON data_source, (response) =>
+      @nstatus = response
       @update_display()
 
 
   update_display: =>
     # Days since sick
-    last_date = @nickwarner.dates_of_recent_illness[0]
-    days_since_sick = moment("20111031", "MMDDYYYY").fromNow()
+    illnesses = @nstatus.illness
+    last_date = illnesses[0].date
+    days_since_sick = moment(last_date, "MMDDYYYY").fromNow()
     $('.days_since_sick').html(days_since_sick)
+    $('.days_since_sick').prop('title', illnesses[0].description)
 
 
 
