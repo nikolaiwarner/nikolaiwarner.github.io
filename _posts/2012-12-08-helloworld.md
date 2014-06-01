@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Hi there!
+title: Hi there
 ---
 
 Hi there!
